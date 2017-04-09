@@ -1,3 +1,19 @@
+## Running docker php:7.0.7-apache
+
+### Create docker image
+
+```
+cd docker
+docker build --rm -t travian ./
+```
+
+### Start container
+```
+docker run --name travian -d -p 80:80 -v $(pwd)/:/var/www/html/ travian
+```
+
+
+
 TravianZ is based on TravianX v6.0.0 with some grapich changes from ZravianX.
 
 
